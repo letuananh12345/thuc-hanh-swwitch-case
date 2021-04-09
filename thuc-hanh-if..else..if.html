@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let userName = prompt('who is there')
+    if (userName=='Admin'){
+        let pass = prompt('nhap password')
+        if (pass=='TheMaster'){
+            alert('Welcome')
+        }else if (pass == null){
+            alert('Wrong password')
+        }else{
+            alert("I don’t know you");
+        }
+    }
+     if (userName==null){
+        alert('canceld');
+    }else{
+        alert('I don’t know you');
+    }
+</script>
+</body>
+</html>
