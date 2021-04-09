@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UNG DUNG CHUYEN DOI TIEN TE</title>
+</head>
+<body >
+<p>Amouunt</p>
+<input type="text" id="dau vao">
+&emsp;
+<select name="" id="select1">
+    <option value="a">VND</option>
+    <option value="b">USD</option>
+
+</select>
+&emsp;
+<select name="b" id="select2">
+    <option value="a">VND</option>
+    <option value="b">USD</option>
+</select>
+&emsp;
+<button style="background: blueviolet " onclick="ukulele()">Convert</button>
+<script>
+    function ukulele() {
+        let giatrivao = document.getElementById('dau vao').value;
+        //let: khai báo biến gia tri vao. gia tri vao = nhâp id'dauvao'
+        //cu moi lan khai báo thì đưa alert vào để thử xem có hiển thị k
+        let select1 = document.getElementById('select1').value;
+        // cho alert (document.getElementById('select 1').value)
+        //và khai báo a,b vào select 1 => lấy và hiện thì đc ra kq a từ select1
+        let select2 = document.getElementById('select2').value;
+        if (select1 == select2) {
+            alert(giatrivao);
+        }
+        if (select1 =='a' && select2 == 'b'){
+            alert(giatrivao/24000);
+        }
+        if (select1 =='b' && select2 =='a'){
+            alert(giatrivao*24000);
+        }
+
+    }
+</script>
+</body>
+</html>
